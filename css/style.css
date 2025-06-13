@@ -1,3 +1,16 @@
+    :root {
+      --warna-bg: #f8f1eb;
+      --warna-card: #f1e5dc;
+      --warna-utama: #d9b99b;
+      --warna-utama-hover: #caa98c;
+      --warna-teks: #3d2e25;
+      --warna-teks-lembut: #4a392e;
+      --warna-batas: #cbb8aa;
+      --warna-input: #fffaf7;
+      --warna-footer-teks: #5c4b3b;
+      --warna-chip: #e5d5c3;
+    }
+    
     * {
       margin: 0;
       padding: 0;
@@ -10,38 +23,73 @@
     }
 
     body {
-      background-color: #f8f1eb;
-      color: #4a3f35;
+      background-color: var(--warna-bg);
+      color: var(--warna-teks);
       line-height: 1.6;
       padding: 20px;
     }
 
     header {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       min-height: 100vh;
       padding: 0 10%;
-      background-color: #f1e5dc;
+      background-color: var(--warna-bg);
     }
 
     header h1 {
       font-size: 3rem;
       font-weight: 600;
-      color: #3d2e25;
+      color: var(--warna-teks);
+    }
+
+    .hero-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      min-height: 100vh;
+      padding: 0 10%;
+      background-color: var(--warna-bg);
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--warna-teks);
+    }
+
+    .hero-visual {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-visual img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #d9b99b;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
 
     .typing {
       font-size: 1.2rem;
       margin: 20px 0;
-      color: #6c584c;
+      color: var(--warna-teks-lembut);
       max-width: 600px;
     }
 
     .buttons a {
       text-decoration: none;
-      background-color: #d9b99b;
+      background-color: var(--warna-teks);
       color: #fff;
       padding: 12px 24px;
       border-radius: 30px;
@@ -51,7 +99,7 @@
     }
 
     .buttons a:hover {
-      background-color: #caa98c;
+      background-color: var(--warna-utama-hover);
     }
 
     section {
@@ -61,11 +109,6 @@
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
     }
 
     h2 {
@@ -88,7 +131,7 @@
     }
 
     .project-item {
-      background-color: #f1e5dc;
+      background-color: var(--warna-card);
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
@@ -98,9 +141,9 @@
       width: 100%;
       padding: 12px;
       margin-bottom: 15px;
-      border: 1px solid #cbb8aa;
+      border: 1px solid var(--warna-batas);
       border-radius: 5px;
-      background-color: #fffaf7;
+      background-color: var(--warna-input);
     }
 
     .contact-form button {
@@ -124,4 +167,11 @@
       background-color: #f1e5dc;
       color: #5c4b3b;
       margin-top: 60px;
+    }
+
+        @media (max-width: 768px) {
+        .hero-layout {
+            flex-direction: column;
+            text-align: center;
+        }
     }
