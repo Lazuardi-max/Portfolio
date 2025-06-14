@@ -102,17 +102,16 @@
 
     .social-links {
       display: flex;
-      justify-content: center;
-      gap: 16px;
+      gap: 12px;
       margin-top: 30px;
     }
 
     .social-links a {
-      display: inline-block;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background-color: var(--warna-bg);
       transition: background 0.3s ease;
@@ -125,6 +124,7 @@
     .social-links img {
       width: 20x;
       height: 20px;
+      object-fit: contain;
     }
 
     .social-links a img {
@@ -254,21 +254,6 @@
       background-color: #caa98c;
     }
 
-    .contact-info {
-      margin-top: 30px;
-      font-size: 0.95rem;
-      color: var(--warna-teks-lembut);
-    }
-
-    .contact-info a {
-      color: var(--warna-utama);
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -303,6 +288,10 @@
 
       .sidebar nav a {
         font-size: 0.9rem;
+      }
+
+      .social-links {
+        justify-content: center;
       }
 
       h1 {
