@@ -102,19 +102,20 @@
 
     .social-links {
       display: flex;
-      gap: 15px;
-      margin-top: auto;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 30px;
     }
 
-    .social-links img {
+    .social-links a img {
       width: 24px;
       height: 24px;
-      filter: grayscale(100%);
+      background-image: none;
       transition: filter 0.3s ease, transform 0.3s ease;
     }
 
     .social-links img:hover {
-      filter: grayscale(0%);
+      filter: none;
       transform: scale(1.1);
     }
 
