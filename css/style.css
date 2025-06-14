@@ -68,7 +68,7 @@
       align-self: flex-start;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: flex-start;
       border-right: 1px solid var(--warna-batas);
     }
@@ -77,25 +77,45 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 3rem; 
       text-decoration: inherit;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       color: var(--warna-teks);
     }
 
     .sidebar nav {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .sidebar nav a {
       text-decoration: none;
       color: var(--warna-teks-lembut);
-      transition: color 0.3s;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     .sidebar nav a:hover {
       color: var(--warna-utama);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: auto;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-links img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
     }
 
     .main-content {
