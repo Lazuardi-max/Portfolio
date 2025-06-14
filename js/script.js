@@ -1,3 +1,4 @@
+  document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll('section');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -13,14 +14,8 @@
     sections.forEach(section => {
       observer.observe(section);
     });
-
-    // Typing effect
-    const textList = [
-      "Web Developer",
-      "Frontend Developer",
-      "Visual Designer",
-      "Creative Content Creator"
-    ];
+  });
+   
     const typingElement = document.querySelector(".typing");
     let index = 0;
     let charIndex = 0;

@@ -4,37 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio pribadi Khamam Lazuardi – Web Developer, Visual Designer, dan Creative Content Creator.">
+  <meta name="keywords" content="khamam lazuardi, web developer, portfolio, frontend, desain, canva, figma">
+  <meta name="author" content="Khamam Lazuardi">
   <title>Khamam Lazuardi - Portfolio</title>
-  <link href="assets/Background.jpg" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   
 <body>
-  <header class="hero-layout">
-    <div class="hero-text">
+  <div class="layout">
+  <aside class="sidebar">
+  
     <h1>Khamam Lazuardi</h1>
-    <p class="typing"></p>
-    <div class="buttons">
-      <a href="#projects">Lihat Portofolio</a>
-      <a href="#contact">Hubungi Saya</a>
-    </div>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/Background.jpg" alt="Avatar" />
-    </div>
-  </header>
+    <p class="typing"> Web Developer yang merancang keheningan jadi pengalaman. </p>
+    <p>“Saya berfokus menciptakan pengalaman digital yang tidak hanya menarik secara visual, tapi juga mudah diakses dan efisien — mulai dari tampilan hingga interaksi di setiap halaman.”</p>
 
-  <section class="about" id="about">
+    <nav>
+      <a href="#about">————— Tentang</a>
+      <a href="#skills">————— Keahlian</a>
+      <a href="#projects">————— Proyek</a>
+      <a href="#contact">————— Kontak</a>
+    </nav>
+
+    <div class="social-links">
+    <a href="https://github.com/Lazuardi-max" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+    </a>
+    <a href="https://instagram.com/iam.lazu_" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+    </a>
+    
+
+    </div>
+
+    </aside>
+
+    <main class="main-content about visible" id="about">
     <h2>Tentang Saya</h2>
     <div class="about-content">
-      <p>Saya adalah seorang web developer yang memiliki ketertarikan dalam desain antarmuka, frontend interaktif, dan konten visual yang menarik. Berpengalaman dalam membuat website portofolio, landing page, dan konten digital menggunakan HTML, CSS, JavaScript, dan Canva.</p>
+    <p>Saya adalah seorang Web Developer dengan ketertarikan besar pada pengembangan antarmuka yang bersih, responsif, dan mudah diakses. Fokus utama saya adalah membangun tampilan frontend yang tidak hanya fungsional tetapi juga menyenangkan secara visual.</p>
+    <p>Di sisi lain, saya juga memiliki kemampuan dalam desain digital dan pembuatan konten kreatif — mulai dari website portofolio, landing page, hingga visual untuk media sosial. Saya terbiasa bekerja menggunakan HTML, CSS, JavaScript, serta alat bantu seperti Figma dan Canva.</p>
+    <p>Saya percaya bahwa setiap detail dalam tampilan web harus dapat menciptakan pengalaman yang nyaman, inklusif, dan bermakna bagi penggunanya.</p>
     </div>
-  </section>
+    </section>
 
   <section class="skills" id="skills">
     <h2>Keahlian</h2>
     <div class="skills-icons">
-      <span>HTML</span> · <span>CSS</span> · <span>JavaScript</span> · <span>Canva</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Canva</span>
+      <span>Responsive Design</span>
+      <span>UI/UX</span>
+      <span>Content Creation</span>
+      <span>GitHub</span>
     </div>
   </section>
 
@@ -42,28 +65,63 @@
     <h2>Proyek</h2>
     <div class="project-list">
       <div class="project-item">
-        <h3>Proyek 1</h3>
-        <p>Proyek RevoU Fundamental Course Software Engineering Batch 19-May-2025.</p>
+        <img src="assets/Konversi suhu.png" alt="Project 1" class="project-img">
+        <h3>Website Konfersi Suhu</h3>
+        <p>Proyek RevoU Fundamental Course Software Engineering Batch 19-May-2025, Sebuah landing page responsif Konfersi suhu menggunakan HTML, CSS, dan JavaScript.</p>
+        <a href="https://revou-fundamental-course.github.io/19-may-25-Lazuardi-max/" target="_blank" class="project-link">Lihat Project</a>
       </div>
       <div class="project-item">
-        <h3>Proyek 2</h3>
-        <p>Proyek RevoU Fundamental Course Software Engineering Batch 02-Juni-2025.</p>
+        <img src="assets/Portfolio Sekolah.png" alt="Project 2" class="project-img">
+        <h3>Website Portfolio Sekolah</h3>
+        <p>Proyek RevoU Fundamental Course Software Engineering Batch 02-Juni-2025, Sebuah landing page responsif Portfolio sekolah menggunakan HTML, CSS, dan JavaScript.</p>
+        <a href="https://revou-fundamental-course.github.io/02-jun-25-Lazuardi-max/" target="_blank" class="project-link">Lihat Project</a>
       </div>
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&h=400" alt="CoffeeCraft" class="project-img">
+        <h3>CoffeeCraft - Landing Page</h3>
+        <p>Landing page interaktif untuk brand kopi lokal dengan fokus pada storytelling visual dan elemen animasi lembut.</p>
+        <a href="#" class="project-link">Lihat Project</a>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.pexels.com/photos/590027/pexels-photo-590027.jpeg?auto=format&fit=crop&w=800&h=400" alt="EduTrack Dashboard" class="project-img">
+        <h3>EduTrack - Dashboard Siswa</h3>
+        <p>Desain UI dashboard sederhana untuk platform edukasi, menampilkan informasi siswa dan progress belajar.</p>
+        <a href="#" class="project-link">Lihat Project</a>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de9ab57?auto=format&fit=crop&w=800&h=400" alt="VisualPlay Portfolio" class="project-img">
+        <h3>VisualPlay - Portfolio Layout</h3>
+        <p>Desain layout portfolio digital dengan fokus pada estetika warna, tipografi bersih, dan animasi scroll halus.</p>
+        <a href="#" class="project-link">Lihat Project</a>
+      </div>
+
     </div>
   </section>
 
   <section class="contact" id="contact">
     <h2>Kontak</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Nama" required>
-      <input type="email" placeholder="Email" required>
-      <textarea rows="5" placeholder="Pesan"></textarea>
+    <p>Jika Anda tertarik bekerja sama atau ingin menghubungi saya, silakan kirim pesan melalui formulir di bawah ini atau hubungi saya langsung melalui email.</p>
+    <form action="https://formspree.io/f/xqabqoqb" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Pesan" required></textarea>
+      <input type="hidden" name="_subject" value="Pesan dari Portfolio Web">
       <button type="submit">Kirim</button>
     </form>
+
+    <div class="contact-info">
+    <p>Email: <a href="mailto:khamamlazuardi@gmail.com">khamamlazuardi@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/iam.lazu_" target="_blank">@iam.lazu_</a></p>
+    </div>
+  </div>
   </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Khamam Lazuardi. All rights reserved.</p>
+    <p>Terima kasih telah mengunjungi portfolio saya</p>
   </footer>
 
   <script src="js/script.js"></script>
